@@ -4,7 +4,30 @@ function showModal(){
   modal.innerHTML = "ボタンが押されました";
 }
 
-function modal2() {
-  let modalcolor = document.querySelector("#modal2");
-  modal2.element.style.backgroundColor = red;
+
+function changeRed() {
+  let modal2 = document.querySelector("#modal2");
+  modal2.style.backgroundColor = "red";
+}
+function changeYellow() {
+  let modal2 = document.querySelector("#modal2");
+  modal2.style.backgroundColor = "yellow";
+}
+function changeGreen() {
+  let modal2 = document.querySelector("#modal2");
+  modal2.style.backgroundColor = "green";
+}
+
+
+function appendCircle() {
+  let modal3 = document.querySelector("#modal3");
+  modal3.innerHTML = modal3.innerHTML + "○";
+  //modal3.innerHTML += "○"; でもいい
+  //modal3.append("○"); でもいい
+
+}
+
+function appendCross() {
+  let modal3 = document.querySelector("#modal3");
+  modal3.innerHTML = `${modal3.innerHTML}✕`;
 }
